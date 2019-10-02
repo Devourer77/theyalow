@@ -1,0 +1,98 @@
+@media handheld and (max-width: 640px) {
+  body {
+      width: 640px;
+  }
+    .head {
+        width: 640px;
+        height: 399px;
+    }
+    .logo {
+        width: 186px;
+        height: 62px;
+        background: url("assets/image/logo-mob.png") center center no-repeat, #565656;
+    }
+    .navigation {
+        width: 457px;
+        height: 62px;
+        background: #F5C506;
+        display: flex;
+    }
+    .navigation a {
+        text-decoration-line: none;
+        font-family: 'segoe wp reg';
+        color: #9B7D08;
+    }
+    .nav-link {
+        height: 62px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .icon-about {
+        width: 172px;
+    }
+    .icon-about img {
+        width: 22px;
+        height: 20px;
+    }
+    .icon-cont {
+        width: 148px;
+    }
+    .icon-cont img {
+        width: 25px;
+        height: 19px;
+    }
+    .icon-serv {
+        width: 133px;
+    }
+    .icon-serv img {
+        width: 20px;
+        height: 20px;
+    }
+    .title-main {
+        display: none;
+    }
+    .slider {
+       width: 640px;
+       height: 327px;
+    }
+    .slider-block {
+        width: 640px;
+        height: 327px;
+    }
+    .slider-block video {
+        width: 640px;
+        height: 327px;
+    }
+    .wrapper {
+        width: 640px;
+    }
+    .icon-area {
+       width: 640px;
+        height: 174px;
+    }
+    .icon-area-cell {
+        width: 212px;
+        height: 174px;
+        padding: 0;
+        border: 1px #d2d2d2 solid;
+        text-align: center;
+        vertical-align: bottom;
+    }
+    .icon-better {
+        background: url("assets/image/icon-area-better.svg") center center no-repeat;
+    }
+    .icon-cutomise {
+        background: url("assets/image/icon-area-customise.svg") center center no-repeat;
+    }
+    .icon-free {
+        background: url("assets/image/icon-area-free.svg") center center no-repeat;
+    }
+    .icon-area-text {
+        font-family: "Segoe UI Light", serif;
+        font-size: 27px;
+        margin-bottom: 15px;
+
+    }
+
+    }

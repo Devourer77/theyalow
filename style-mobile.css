@@ -1,14 +1,18 @@
-@media handheld and (max-width: 640px) {
+@media screen and (max-width: 640px) {
+    html, body { overflow-x:hidden; }
   body {
       width: 640px;
+      margin: auto;
   }
     .head {
         width: 640px;
-        height: 399px;
+        height: 62px;
+        display: flex;
     }
     .logo {
         width: 186px;
         height: 62px;
+        display: flex;
         background: url("assets/image/logo-mob.png") center center no-repeat, #565656;
     }
     .navigation {
@@ -19,7 +23,7 @@
     }
     .navigation a {
         text-decoration-line: none;
-        font-family: 'segoe wp reg';
+        font-family: 'segoe-wp-light';
         color: #9B7D08;
     }
     .nav-link {
@@ -63,6 +67,7 @@
     .slider-block video {
         width: 640px;
         height: 327px;
+        object-fit: cover;
     }
     .wrapper {
         width: 640px;
@@ -70,29 +75,196 @@
     .icon-area {
        width: 640px;
         height: 174px;
+        background: url("assets/image/icon-back-mobile.png");
+        box-shadow: 0 -6px 0 rgba(222, 220, 214, 0.4), 0 -7px 0 rgba(228, 228, 224, 0.3), 0 -12px 0 rgba(158, 158, 155, 0.2)
     }
     .icon-area-cell {
         width: 212px;
         height: 174px;
         padding: 0;
-        border: 1px #d2d2d2 solid;
         text-align: center;
         vertical-align: bottom;
     }
     .icon-better {
-        background: url("assets/image/icon-area-better.svg") center center no-repeat;
+        background: url("assets/image/icon-area-better-m.svg") center center no-repeat;
     }
     .icon-cutomise {
-        background: url("assets/image/icon-area-customise.svg") center center no-repeat;
+        background: url("assets/image/icon-area-customise-m.svg") center center no-repeat;
     }
     .icon-free {
-        background: url("assets/image/icon-area-free.svg") center center no-repeat;
+        background: url("assets/image/icon-area-free-m.svg") center center no-repeat;
     }
     .icon-area-text {
         font-family: "Segoe UI Light", serif;
-        font-size: 27px;
+        font-size: 23px;
         margin-bottom: 15px;
 
+    }
+    .section-content {
+        width: 640px;
+        height: 480px;
+        margin-top: 11px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .section-content-title, .block-twitter, .block-data {
+        display: none;
+    }
+    .section-content-blocks, .section-content-table {
+        width: 640px;
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .section-content-blocks-title {
+        width: 299px;
+        height: 232px;
+        position: relative;
+        background: #EC9E03;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .blocks-title {
+        width: 235px;
+        height: 189px;
+        color: white;
+        font-size: 28px;
+        text-align: left;
+        padding: 0;
+        font-family: 'segoe-wp-light';
+    }
+    .block-video {
+        width: 315px;
+        height: 233px;
+        overflow: hidden;
+    }
+    .block-title-plus {
+        width: 12px;
+        height: 12px;
+        top: 212px;
+        left: 280px;
+        position: absolute;
+        background: url("assets/image/plus.png") no-repeat;
+        transition-duration: 1s;
+    }
+    .section-list {
+        width: 640px;
+        height: 470px;
+        background: #4C4C4C;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .section-list-content {
+        width: 574px;
+        height: 375px;
+    }
+    .list-content-list {
+        display: none;
+        }
+    .list-content-title {
+        height: 32px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 39px;
+        color: #F5C506;
+        margin-bottom: 36px;
+        font-family: 'PT Sans';
+    }
+    .list-content-devace {
+        height: 310px;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        position: relative;
+        color: #A9A9A7;
+        font-size: 22px;
+        background: url("assets/image/desctop.png") 17px 52px no-repeat, url("assets/image/tablet.png") 363px 94px no-repeat, url("assets/image/mobile.png") 518px 204px no-repeat;
+    }
+    .list-content-devace-bool {
+        width: 117px;
+        height: 117px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        position: absolute;
+        top: 11px;
+        left: -1px;
+        background: #F5C506;
+        color: white;
+        font-size: 17px;
+        font-family: "PT Sans Narrow";
+    }
+    .section-content__twitter-mes {
+        width: 640px;
+        height: 233px;
+        display: flex;
+        justify-content: flex-end;
+        background: url("assets/image/twitter-m.png") 85px center no-repeat, #F5C507;
+    }
+    .section-content__block {
+        width: 323px;
+        height: 233px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+    }
+    .section-content__block-message {
+        height: 154px;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column-reverse;
+    }
+    .section-content__block-m {
+        width: 285px;
+        height: 43px;
+        padding-left: 28px;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        background: url("assets/image/twi-mes.png") no-repeat;
+        font-size: 13px;
+        color: #8F8E8E;
+        /*opacity: 0.7019607843137254;*/
+    }
+    .section-content__block-m_text {
+        width: 217px;
+        height: 28px;
+    }
+    .section-content__twitter-input {
+        width: 280px;
+        height: 49px;
+        display: flex;
+        padding-left: 13px;
+        align-items: center;
+        justify-content: center;
+    }
+    .section-content__twitter-input_text {
+        width: 190px;
+        height: 30px;
+        border: 0;
+        background: #ffffff;
+        border-radius: 18px 0 0 18px;
+    }
+    .section-content__twitter-input_button {
+        width: 80px;
+        height: 30px;
+        background: #E2A11F;
+        border: 0;
+        color: #ffffff;
+        font-size: 15px;
+        border-radius: 0 18px 18px 0;
+    }
+    .section-footer {
+        width: 640px;
+        height: 51px;
+        background: url('assets/image/footer-m.png') 46px 9px no-repeat, #4C4C4C;
+        box-shadow: 0 0 20px #000000;
     }
 
     }

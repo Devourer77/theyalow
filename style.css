@@ -7,7 +7,7 @@
     src: url('assets/fonts/Segoe-UI-Light.ttf') format('ttf');
 }
 @font-face {
-    font-family: 'segoe wp light';
+    font-family: 'segoe-wp-light';
     src: url('assets/fonts/segoe-wp-light.ttf') format('ttf');
 }
 @font-face {
@@ -22,14 +22,14 @@
     font-family: 'PT Sans Narrow';
     src: url('assets/fonts/PT-Sans-Narrow-reg.ttf') format('ttf');
 }
-@media screen and (min-width: 640px) {
+@media screen and (min-width: 641px) {
 
 body {
     max-width: 1300px;
     margin: auto;
 }
 .wrapper {
-    max-width: 1300px;
+    width: 1300px;
     margin: auto;
 }
 header {
@@ -56,7 +56,7 @@ header {
     margin: 44px 0 0 247px;
     background: #F5C506;
     display: flex;
-    box-shadow: -5px -6px 0px rgba(245,197,6,0.4), -7px -7px 0px rgba(245,197,6,0.3), -13px -12px 0px rgba(245,197,6,0.2);
+    box-shadow: -5px -6px 0 rgba(245,197,6,0.4), -7px -7px 0 rgba(245,197,6,0.3), -13px -12px 0 rgba(245,197,6,0.2);
 }
 .navigation a {
     text-decoration-line: none;
@@ -116,13 +116,14 @@ header {
 .slider-block {
     width: 1019px;
     display: flex;
-    margin: 57px auto;
+    margin: 50px auto;
 }
 .slider-block video {
-    width: 549px;
-    height: 327px;
+    width: 560px;
+    height: 344px;
 }
 .icon-area {
+    width: 1300px;
     height: inherit;
     display: flex;
     justify-content: center;
@@ -138,6 +139,11 @@ header {
 }
 .icon-better {
     background: url("assets/image/icon-area-better.svg") 113px 60px no-repeat;
+    transition-duration: 2s;
+}
+.icon-better:hover {
+    transform: scaleY(1.2);
+
 }
 .icon-cutomise {
     background: url("assets/image/icon-area-customise.svg") 135px 36px no-repeat;
@@ -345,8 +351,11 @@ header {
 .section-footer {
     width: 1300px;
     height: 64px;
-    background: url("assets/image/logo-footer.png") 139px 0 no-repeat, #4C4C4C;
+    background: url("assets/image/logo-footer.png") 139px 5px no-repeat, #4C4C4C;
     box-shadow: 0 0 20px #000000;
+}
+.section-content__twitter-mes {
+    display: none;
 }
 
 }
